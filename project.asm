@@ -71,3 +71,8 @@ fib_loop:
     add $t5, $t2, $t3     
     move $t2, $t3         
     move $t3, $t5
+
+   # number Increment counter
+    addi $t4, $t4, 1
+
+    j fib_loop
