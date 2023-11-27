@@ -5,3 +5,10 @@
 
 
 .text
+.globl main
+
+main:
+    # set up prompt for input 
+    li $v0, 4
+    la $a0, prompt
+    syscall
