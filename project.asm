@@ -56,3 +56,8 @@ proceed:
 fib_loop:
     # Check if we have reached N numbers
     bge $t4, $t0, end_fib   
+
+    # output next number 
+    li $v0, 1
+    move $a0, $t3
+    syscall
