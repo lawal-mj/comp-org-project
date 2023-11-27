@@ -44,3 +44,11 @@ proceed:
     li $v0, 1
     move $a0, $t2
     syscall
+
+    # Print out a newline
+    li $v0, 4
+    la $a0, newline
+    syscall
+
+   # continuous counter setup
+    li $t4, 1   
