@@ -19,3 +19,9 @@ main:
 
     # Store the number in $t0
     move $t0, $v0
+
+   # Check if the number is legal (>= 25)
+    li $t1, 25
+    blt $t0, $t1, error
+
+    j proceed
