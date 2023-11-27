@@ -25,3 +25,9 @@ main:
     blt $t0, $t1, error
 
     j proceed
+
+error:
+    # Print error message
+    li $v0, 4
+    la $a0, error_msg
+    syscall
