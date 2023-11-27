@@ -39,3 +39,8 @@ proceed:
     # create first two fib numbers
     li $t2, 0             
     li $t3, 1   
+
+   # print out first fibonacci number 
+    li $v0, 1
+    move $a0, $t2
+    syscall
