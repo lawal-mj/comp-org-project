@@ -34,3 +34,8 @@ error:
 
     # Jump back to main to prompt again
     j main
+
+proceed:
+    # create first two fib numbers
+    li $t2, 0             
+    li $t3, 1   
