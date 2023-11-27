@@ -61,3 +61,8 @@ fib_loop:
     li $v0, 1
     move $a0, $t3
     syscall
+
+    # newline for formating purposes
+    li $v0, 4
+    la $a0, newline
+    syscall
