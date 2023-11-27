@@ -76,3 +76,8 @@ fib_loop:
     addi $t4, $t4, 1
 
     j fib_loop
+
+end_fib:
+    # End of program
+    li $v0, 10
+    syscall
