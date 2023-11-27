@@ -51,4 +51,8 @@ proceed:
     syscall
 
    # continuous counter setup
-    li $t4, 1   
+    li $t4, 1
+
+fib_loop:
+    # Check if we have reached N numbers
+    bge $t4, $t0, end_fib   
