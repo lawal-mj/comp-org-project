@@ -66,3 +66,8 @@ fib_loop:
     li $v0, 4
     la $a0, newline
     syscall
+
+    # compute the next Fibonacci number
+    add $t5, $t2, $t3     
+    move $t2, $t3         
+    move $t3, $t5
