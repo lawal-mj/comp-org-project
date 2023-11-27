@@ -31,3 +31,6 @@ error:
     li $v0, 4
     la $a0, error_msg
     syscall
+
+    # Jump back to main to prompt again
+    j main
